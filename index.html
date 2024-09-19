@@ -32,7 +32,7 @@
             </div>
             <div class="controls">
               <button type="button" class="add-to-cart button">Add to cart</button>
-              <form action="" class="amount-form">
+              <form action="#" class="amount-form">
                 <input type="hidden" name="name" value="cake">
                 <label class="input-wrapper">
                   <button type="button" class="amount-controll less button">
@@ -53,118 +53,98 @@
           <p class="text product-price">$6.50</p>
         </article>
       </li>
-      <li>
-        <article class="product-card">
-          <div class="product-wrapper">
-            <div class="img-wrapper">
-              <picture>
-                <source media="(min-width: 840px)" srcset="./assets/images/image-waffle-desktop.jpg" width="250">
-                <source media="(min-width: 620px)" srcset="./assets/images/image-waffle-tablet.jpg" width="214">
-                <img src="./assets/images/image-waffle-mobile.jpg" alt="Waffles with berries" width="325">
-              </picture>
-            </div>
-            <div class="controls">
-              <button type="button" class="add-to-cart button">Add to cart</button>
-              <form action="" class="amount-form">
-                <input type="hidden" name="name" value="cake">
-                <label class="input-wrapper">
-                  <button type="button" class="amount-controll less button">
-                    <span class="visually-hidden">Less</span>
-                  </button>
-                  <div class="input-container">
-                    <input type="text" class="amount-input" value="1">
-                  </div>
-                  <button type="button" class="amount-controll more button">
-                    <span class="visually-hidden">More</span>
-                  </button>
-                </label>
-              </form>
-            </div>
-          </div>
-          <h4 class="title category">Waffle</h4>
-          <h3 class="title product-title">Waffle with Berries</h3>
-          <p class="text product-price">$6.50</p>
-        </article>
-      </li>
-      <li>
-        <article class="product-card">
-          <div class="product-wrapper">
-            <div class="img-wrapper">
-              <picture>
-                <source media="(min-width: 840px)" srcset="./assets/images/image-waffle-desktop.jpg" width="250">
-                <source media="(min-width: 620px)" srcset="./assets/images/image-waffle-tablet.jpg" width="214">
-                <img src="./assets/images/image-waffle-mobile.jpg" alt="Waffles with berries" width="325">
-              </picture>
-            </div>
-            <div class="controls">
-              <button type="button" class="add-to-cart button">Add to cart</button>
-              <form action="" class="amount-form">
-                <input type="hidden" name="name" value="cake">
-                <label class="input-wrapper">
-                  <button type="button" class="amount-controll less button">
-                    <span class="visually-hidden">Less</span>
-                  </button>
-                  <div class="input-container">
-                    <input type="text" class="amount-input" value="1">
-                  </div>
-                  <button type="button" class="amount-controll more button">
-                    <span class="visually-hidden">More</span>
-                  </button>
-                </label>
-              </form>
-            </div>
-          </div>
-          <h4 class="title category">Waffle</h4>
-          <h3 class="title product-title">Waffle with Berries</h3>
-          <p class="text product-price">$6.50</p>
-        </article>
-      </li>
-      <li>
-        <article class="product-card">
-          <div class="product-wrapper">
-            <div class="img-wrapper">
-              <picture>
-                <source media="(min-width: 840px)" srcset="./assets/images/image-waffle-desktop.jpg" width="250">
-                <source media="(min-width: 620px)" srcset="./assets/images/image-waffle-tablet.jpg" width="214">
-                <img src="./assets/images/image-waffle-mobile.jpg" alt="Waffles with berries" width="325">
-              </picture>
-            </div>
-            <div class="controls">
-              <button type="button" class="add-to-cart button">Add to cart</button>
-              <form action="" class="amount-form">
-                <input type="hidden" name="name" value="cake">
-                <label class="input-wrapper">
-                  <button type="button" class="amount-controll less button">
-                    <span class="visually-hidden">Less</span>
-                  </button>
-                  <div class="input-container">
-                    <input type="text" class="amount-input" value="1">
-                  </div>
-                  <button type="button" class="amount-controll more button">
-                    <span class="visually-hidden">More</span>
-                  </button>
-                </label>
-              </form>
-            </div>
-          </div>
-          <h4 class="title category">Waffle</h4>
-          <h3 class="title product-title">Waffle with Berries</h3>
-          <p class="text product-price">$6.50</p>
-        </article>
-      </li>
-
     </ul>
   </main>
   <footer class="footer">
     <article class="cart">
       <h2 class="title">Your cart (<span class="cart-amount">0</span>)</h2>
       <div class="cart-content empty">
-        <p class="text filler">
+        <ul class="list cart-list remove js-cart-list">
+        </ul>
+        <p class="text order-total remove">
+          <span>Order Total</span><span class="nubmer">$46.50</span>
+        </p>
+        <p class="text carboneutral remove">
+          This is a <strong>carbon-neutral</strong> delivery
+        </p>
+        <button type="button" class="button button--accent remove js-confirm-order">
+          Confirm order
+        </button>
+        <p class="text filler appear">
           Your added items will appear here
         </p>
       </div>
     </article>
   </footer>
+  <section class="confirm-order-popup">
+    <article class="confirm-order">
+      <div class="decor"></div>
+      <h2 class="title">Order confirmed</h2>
+      <p class="text">We hope you enjoy your food!</p>
+      <div class="order-summary">
+        <ul class="list order-list">
+          <li>
+            <div class="thumbnail-wrapper">
+              <img src="./assets/images/image-cake-thumbnail.jpg" alt="cake">
+            </div>
+            <h3 class="title">Classic Tiramisu</h3>
+            <p class="text"><span class="amount">1x</span><span class="price">@ $5.50</span>
+            </p>
+            <p class="text item-total">$5.50</p>
+          </li>
+        </ul>
+        <p class="text order-total">
+          <span>Order Total</span><span class="nubmer">$46.50</span>
+        </p>
+      </div>
+      <button type="button" class="button button--accent js-start-new-order">
+        Start new order
+      </button>
+    </article>
+  </section>
+  <template id="productCard">
+    <li>
+      <article class="product-card">
+        <div class="product-wrapper">
+          <div class="img-wrapper">
+            <picture>
+              <source media="(min-width: 840px)" srcset="./assets/images/image-waffle-desktop.jpg" width="250">
+              <source media="(min-width: 620px)" srcset="./assets/images/image-waffle-tablet.jpg" width="214">
+              <img src="./assets/images/image-waffle-mobile.jpg" alt="Waffles with berries" width="325">
+            </picture>
+          </div>
+          <div class="controls">
+            <button type="button" class="add-to-cart button">Add to cart</button>
+            <form action="" class="amount-form">
+              <input type="hidden" name="name" value="cake">
+              <label class="input-wrapper">
+                <button type="button" class="amount-controll less button">
+                  <span class="visually-hidden">Less</span>
+                </button>
+                <div class="input-container">
+                  <input type="text" class="amount-input" value="1">
+                </div>
+                <button type="button" class="amount-controll more button">
+                  <span class="visually-hidden">More</span>
+                </button>
+              </label>
+            </form>
+          </div>
+        </div>
+        <h4 class="title category">Waffle</h4>
+        <h3 class="title product-title">Waffle with Berries</h3>
+        <p class="text product-price">$6.50</p>
+      </article>
+    </li>
+  </template>
+  <template id="cartItem">
+    <li>
+      <h3 class="title">Classic Tiramisu</h3>
+      <p class="text"><span class="amount">1x</span><span class="price">@ $5.50</span><span class="total">$5.50</span>
+      </p>
+      <button class="button delete-item"></button>
+    </li>
+  </template>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
